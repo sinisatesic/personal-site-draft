@@ -1,0 +1,122 @@
+
+
+.container-fluid {
+    position: relative;
+}
+
+.jumbotron-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .2;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background: #bf7aaf;
+    border-radius: 50%;
+    margin: auto;
+    top: auto;
+    animation: shape-morph 10s 1;
+    opacity: 0;
+}
+@keyframes shape-morph {
+    0 % {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #7178b3;
+        opacity: 0.1;
+    }
+    10%{
+        background: #bf7aaf;
+        opacity: 1;
+        border-radius: 50%;
+    }
+    60%{
+        animation-timing-function: ease-in-out;
+        border-radius: 0;
+        width: 1500px;
+        height: 600px;
+        background: #7178b3;
+        opacity: 1;
+    }
+    61%, 62%, 63%, 64%, 65%, 66%, 67%, 68%, 69% {
+        border-radius: 0;
+        width: 1500px;
+        height: 600px;
+        background: #7178b3;
+        opacity: 1;
+    }
+    71%, 72%, 73%, 74% {
+        background: #bf7aaf;
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(0deg)
+        rotate(31.5deg);
+        background: #bf7aaf;
+        opacity: 1;
+    }
+    90%{
+        transform: rotate(180deg);
+        background: #bf7aaf;
+        opacity: .7;
+        border-radius: 50%;
+    }
+
+    100%{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: rotate(72deg)
+        rotate(-360deg);
+        background: #bf7aaf;
+        opacity: 0;
+    }
+}
+
+/*from {*/
+/*    transform: rotate(0deg)*/
+/*    translate(-150px)*/
+/*    rotate(0deg);*/
+/*}*/
+/*to {*/
+/*    transform: rotate(360deg)*/
+/*    translate(-150px)*/
+/*    rotate(-360deg);*/
+.jumbotron {
+    height: 100vh;
+    background: transparent;
+
+}
+
+#picture-card {
+    background: transparent;
+    border-style: none;
+    animation: fade-in 3s 1;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.card {
+    background-size: auto;
+    background: linear-gradient(to left, #f7f7c3, #fff);
+}
+
+.sky {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+}

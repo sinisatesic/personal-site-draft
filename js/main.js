@@ -1,10 +1,12 @@
-//
+
 // $('img').onmouseenter(function(){
-//     $('.icon-span')
-// })
+//     $('.icon-span').css({
+//         'display':'block'
+//     });
+// });
 const imgTag = document.getElementsByTagName('img');
-const iconSpans = document.getElementsByClassName('icon-span');
+const iconSpans = document.getElementsByClassName('icon-span:hover');
 
 imgTag.addEventListener('mouseenter', e => {
-    iconSpans.style = 'display: block'
+    iconSpans.style = 'transform: scale(2)'
 });

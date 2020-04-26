@@ -128,3 +128,17 @@ t7.from(".welcome-par-3", 3, {
     ease: Expo.easeIn
 }, "-=4");
 
+var t8 = new TimelineMax();
+
+t8.from(".header-button", 3, {
+    delay: 0.6,
+    opacity: 0,
+    x: 50,
+    ease: Expo.easeInOut
+}).from(".header-button", 3, {
+    delay: 0.6,
+    opacity: 0,
+    x: 50,
+    ease: Expo.easeInOut
+}, "-=5");
+

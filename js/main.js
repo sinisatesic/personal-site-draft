@@ -7,10 +7,10 @@
 const shadow = document.getElementsByClassName('shadow-enter');
 const reverseShadow = document.getElementsByClassName('shadow-exit');
 
-shadow.addEventListener('mouseenter', e => {
+shadow.addEventListener('mouseenter', () => {
     shadow.style.display = 'block';
 });
 
-reverseShadow.addEventListener('mouseleave', e => {
+reverseShadow.addEventListener('mouseleave', () => {
     reverseShadow.style.display = 'block';
 });
